@@ -31,8 +31,8 @@ export default function Page() {
       </header>
 
       <AnimatePresence>
-        {currentLogo === 'openmile' && <Openmile />}
-        {currentLogo === 'openlink' && <Openlink />}
+        {currentLogo === 'openmile' && <Openmile key='openmile' />}
+        {currentLogo === 'openlink' && <Openlink key='openlink' />}
       </AnimatePresence>
 
       <AnimatePresence>

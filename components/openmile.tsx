@@ -7,7 +7,6 @@ export const Openmile = () => {
   return (
     <motion.div
       className='absolute w-[66%] max-w-[48rem]'
-      key='openmile'
       initial={{ transform: 'translateX(2600px)' }}
       animate={{ transform: 'translateX(0px)' }}
       transition={{
