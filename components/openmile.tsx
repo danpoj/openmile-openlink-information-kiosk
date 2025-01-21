@@ -6,7 +6,7 @@ import Image from 'next/image';
 export const Openmile = () => {
   return (
     <motion.div
-      className='absolute w-[66%] max-w-[48rem]'
+      className='absolute w-[66%] max-w-[48rem] -mt-52'
       initial={{ transform: 'translateX(2600px)' }}
       animate={{ transform: 'translateX(0px)' }}
       transition={{
