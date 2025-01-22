@@ -6,7 +6,7 @@ import Image from 'next/image';
 export const Arrow = () => {
   return (
     <motion.div
-      className='absolute bottom-0 -left-56 right-0'
+      className='absolute bottom-0 -left-[30%] right-0'
       initial={{ transform: 'translateX(-1200px)' }}
       animate={{ transform: 'translateX(0px)' }}
       transition={{

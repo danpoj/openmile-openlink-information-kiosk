@@ -17,7 +17,7 @@ export const Buttons = ({
           if (state === 'map') setState(null);
           else setState('map');
         }}
-        className={`flex items-center gap-2 px-4 py-3 ${
+        className={`flex items-center gap-2 px-3 py-2 ${
           state === 'map' ? 'bg-white/40' : 'bg-white/15'
         }`}
       >
@@ -28,7 +28,7 @@ export const Buttons = ({
           width={20}
           height={20}
         />
-        <span className='text-white text-lg'>사무실 안내도</span>
+        <span className='text-white'>사무실 안내도</span>
       </button>
 
       <button
@@ -36,7 +36,7 @@ export const Buttons = ({
           if (state === 'alarm') setState(null);
           else setState('alarm');
         }}
-        className={`flex items-center gap-2 bg-white/15 px-4 py-3 ${
+        className={`flex items-center gap-2 bg-white/15 px-3 py-2 ${
           state === 'alarm' ? 'bg-white/40' : 'bg-white/15'
         }`}
       >
@@ -47,7 +47,7 @@ export const Buttons = ({
           width={20}
           height={20}
         />
-        <span className='text-white text-lg'>도착 알리기</span>
+        <span className='text-white'>도착 알리기</span>
       </button>
     </div>
   );

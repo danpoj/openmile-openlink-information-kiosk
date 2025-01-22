@@ -25,7 +25,7 @@ export default function Page() {
 
   return (
     <main className='h-full mx-auto flex flex-col items-center justify-center relative bg-[#f8f8f8]'>
-      <div className='h-full bg-[#2659F7] relative flex flex-col items-center justify-center w-full max-w-[52rem] overflow-hidden'>
+      <div className='h-full bg-[#2659F7] relative flex flex-col items-center justify-center w-full max-w-[36rem] overflow-hidden'>
         <header className='self-center absolute top-0 z-10 flex flex-col gap-3'>
           <Buttons state={state} setState={setState} />
           <AnimatePresence>
