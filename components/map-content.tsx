@@ -10,13 +10,26 @@ export const MapContent = ({
   setState: Dispatch<SetStateAction<'map' | 'alarm' | null>>;
 }) => {
   return (
-    <div className='bg-black/50 absolute inset-0 backdrop-blur flex items-center justify-center'>
-      <motion.div
-        initial={{ y: 80, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.3 }}
-        className='relative w-[560px] aspect-[888/650]'
-      >
+    <motion.div
+      initial={{ x: -120, opacity: 0 }}
+      animate={{ x: -20, opacity: 1 }}
+      exit={{ x: -120, opacity: 0 }}
+      transition={{
+        duration: 0.3,
+        type: 'keyframes',
+      }}
+      className='bg-black/50 absolute inset-0 backdrop-blur flex items-center justify-center rounded-r-2xl p-4'
+    >
+      <Image
+        unoptimized
+        src='/office-map.svg'
+        alt='office map'
+        width={560}
+        height={560}
+        className='w-[90%] translate-x-2'
+      />
+
+      {/* <div className='relative w-[560px] aspect-[888/650]'>
         <Image
           unoptimized
           src='/office-map.svg'
@@ -41,7 +54,7 @@ export const MapContent = ({
           height={45}
           className='absolute top-[122px] left-[407px]'
         />
-      </motion.div>
+      </div> */}
 
       <button
         onClick={() => setState(null)}
@@ -49,6 +62,6 @@ export const MapContent = ({
       >
         <Image unoptimized src='/X.svg' alt='X icon' width={20} height={20} />
       </button>
-    </div>
+    </motion.div>
   );
 };

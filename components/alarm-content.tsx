@@ -11,9 +11,10 @@ export const AlarmContent = ({
 }) => {
   return (
     <motion.div
-      initial={{ y: -10, opacity: 0 }}
+      initial={{ y: -48, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.2 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.3 }}
       className='flex items-center justify-center flex-col w-full gap-2'
     >
       <p className='flex flex-col items-center justify-center font-semibold bg-white opacity-90 rounded-lg py-4 shadow-xl w-full'>

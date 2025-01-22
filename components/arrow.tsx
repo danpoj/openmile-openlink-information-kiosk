@@ -6,14 +6,15 @@ import Image from 'next/image';
 export const Arrow = () => {
   return (
     <motion.div
-      className='absolute bottom-0'
-      initial={{ transform: 'translateX(-2600px)' }}
+      className='absolute bottom-0 -left-56 right-0'
+      initial={{ transform: 'translateX(-1200px)' }}
       animate={{ transform: 'translateX(0px)' }}
       transition={{
-        type: 'keyframes',
-        duration: 2,
+        type: 'tween',
+        duration: 1.8,
+        ease: 'easeInOut',
       }}
-      exit={{ transform: 'translateX(2600px)' }}
+      exit={{ transform: 'translateX(1200px)' }}
     >
       <Image
         unoptimized

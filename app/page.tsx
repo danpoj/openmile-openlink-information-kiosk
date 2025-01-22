@@ -24,22 +24,30 @@ export default function Page() {
   }, []);
 
   return (
-    <main className='h-full bg-[#2659F7] mx-auto flex flex-col items-center justify-center relative'>
-      <header className='self-center absolute top-0 z-10 flex flex-col gap-3'>
-        <Buttons state={state} setState={setState} />
-        {state === 'alarm' && <AlarmContent setState={setState} />}
-      </header>
+    <main className='h-full mx-auto flex flex-col items-center justify-center relative bg-[#f8f8f8]'>
+      <div className='h-full bg-[#2659F7] relative flex flex-col items-center justify-center w-full max-w-[52rem] overflow-hidden'>
+        <header className='self-center absolute top-0 z-10 flex flex-col gap-3'>
+          <Buttons state={state} setState={setState} />
+          <AnimatePresence>
+            {state === 'alarm' && (
+              <AlarmContent setState={setState} key={state} />
+            )}
+          </AnimatePresence>
+        </header>
 
-      <AnimatePresence>
-        {currentLogo === 'openmile' && <Openmile key='openmile' />}
-        {currentLogo === 'openlink' && <Openlink key='openlink' />}
-      </AnimatePresence>
+        <AnimatePresence>
+          {currentLogo === 'openmile' && <Openmile key='openmile' />}
+          {currentLogo === 'openlink' && <Openlink key='openlink' />}
+        </AnimatePresence>
 
-      <AnimatePresence>
-        <Arrow key={currentLogo} />
-      </AnimatePresence>
+        <AnimatePresence>
+          <Arrow key={currentLogo} />
+        </AnimatePresence>
 
-      {state === 'map' && <MapContent setState={setState} />}
+        <AnimatePresence>
+          {state === 'map' && <MapContent setState={setState} key={state} />}
+        </AnimatePresence>
+      </div>
     </main>
   );
 }

@@ -1,25 +1,40 @@
-<svg width="1080" height="400" viewBox="0 0 1080 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_2043_955)">
-<path d="M1079.73 400L879.82 199.91V400H1079.73Z" fill="white"/>
-<path d="M479.82 300.045H897.289V400H479.82" fill="white"/>
-<path d="M879.82 199.91L679.73 0V199.91H879.82Z" fill="white"/>
-<path d="M279.91 99.955H697.38V199.91H279.91" fill="white"/>
-<path d="M479.82 400L279.91 199.91V400H479.82Z" fill="white"/>
-<path d="M-120.09 299.865H297.379V399.82H-120.09" fill="url(#paint0_linear_2043_955)"/>
-<path d="M279.91 199.91L80 0V199.91H279.91Z" fill="white"/>
-<path d="M-320 99.955H97.4696V199.91H-320" fill="url(#paint1_linear_2043_955)"/>
-</g>
-<defs>
-<linearGradient id="paint0_linear_2043_955" x1="297.38" y1="349.933" x2="-120.09" y2="349.933" gradientUnits="userSpaceOnUse">
-<stop offset="0.3" stop-color="white"/>
-<stop offset="1" stop-color="white" stop-opacity="0"/>
-</linearGradient>
-<linearGradient id="paint1_linear_2043_955" x1="97.4696" y1="150.022" x2="-320" y2="150.022" gradientUnits="userSpaceOnUse">
-<stop offset="0.3" stop-color="white"/>
-<stop offset="1" stop-color="white" stop-opacity="0"/>
-</linearGradient>
-<clipPath id="clip0_2043_955">
-<rect width="1399.73" height="400" fill="white" transform="translate(-320)"/>
-</clipPath>
-</defs>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 77.72 22.21">
+  <!-- Generator: Adobe Illustrator 29.0.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 186)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: url(#linear-gradient1);
+      }
+
+      .st1 {
+        fill: url(#linear-gradient);
+      }
+
+      .st2 {
+        fill: #fff;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="1860.93" y1="19.43" x2="1884.1" y2="19.43" gradientTransform="translate(1895.21) rotate(-180) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset=".3" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient1" x1="1872.03" y1="8.33" x2="1895.21" y2="8.33" xlink:href="#linear-gradient"/>
+  </defs>
+  <g>
+    <polygon class="st2" points="77.72 22.21 66.62 11.1 66.62 22.21 77.72 22.21"/>
+    <path class="st2" d="M44.41,16.66h23.18v5.55h-23.18"/>
+  </g>
+  <g>
+    <polygon class="st2" points="66.62 11.1 55.51 0 55.51 11.1 66.62 11.1"/>
+    <path class="st2" d="M33.31,5.55h23.18v5.55h-23.18"/>
+  </g>
+  <g>
+    <polygon class="st2" points="44.41 22.21 33.31 11.1 33.31 22.21 44.41 22.21"/>
+    <path class="st1" d="M11.1,16.65h23.18v5.55H11.1"/>
+  </g>
+  <g>
+    <polygon class="st2" points="33.31 11.1 22.21 0 22.21 11.1 33.31 11.1"/>
+    <path class="st0" d="M0,5.55h23.18v5.55H0"/>
+  </g>
 </svg>
